@@ -1,0 +1,68 @@
+.instrucao{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.instru__conteudo{
+    justify-self: center;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color:#FFF2E7;
+    text-align: justify;
+}
+.instru___conteudo__titulo{
+    font-size:36px;
+    font-family: Teko;
+    color:rgb(161, 15, 5);
+    padding-top: 1rem;
+    text-align: center;
+
+}
+.instru__subtitulo{
+    font-size:28px;
+    font-family: Teko;
+    color:rgb(161, 15, 5);
+    margin-top: 0.5rem;
+    text-align: center;
+
+}
+.instru__conteudo__texto{
+    padding: 0 2rem;
+    font-size: 16px;
+    font-size: Montserrat;
+    text-align: center;
+
+}
+.instru_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    border-radius: 10px;
+    align-self: center;
+    padding: 1rem 0;
+}
+.instru-lista{
+    padding: 0 6rem;
+    list-style:disc;
+}
+.instru-lista li{
+    padding: 0.5rem;
+}
+em{
+    font-style: italic;
+}
+strong{
+    font-weight: bold;
+    color:rgb(5, 75, 161);
+
+}
+
+.instru__conteudo__texto a{
+    
+     color:rgb(5, 75, 161);
+     text-decoration: none;
+    
+}

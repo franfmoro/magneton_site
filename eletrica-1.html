@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Magneton</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!---informação edge recente-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!---escala da página baseada no dispositivo-->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles/conteudo.css">
+  </head>
+  <body>
+        <header>
+            <nav>
+                <span class="logo"><strong class="destaque">Magne</strong>ton</span>
+                <ul class="menu">
+                    <li><a href="index.html" class="menu-link">Home</a></li>   
+                    <li><a href="instrucao.html" class="menu-link">Instruções</a></li>              
+                    <li><a href="contato.html" class="menu-link">Contato</a></li>                                         
+                </ul>
+                <a class="menu__texto">Moodle</a>
+            </nav>
+        </header>
+    <main class="conteudo">
+        <section class="conteudo_sessao">
+            <h1 class="conteudo__titulo">Elétrica 1</h1>
+            <p class="conteudo__texto">O chatbot de Circuitos Elétricos foi desenvolvido para a turma de Elétrica 1 a plataforma IBM Watson Assistant. </p>
+            <p class="conteudo__texto">O magneton é composto por: Laboratório Reflexivo com algumas perguntas para exercício pessoal, vídeo para reforço contendo perguntas reflexivas, recomendação de conteúdo extra e informações de contato.</p>
+            <p class="conteudo__texto">Caso tenha alguma dificuldade em relação a como utilizá-lo acesse no menu de navegação o item: instruções</p>
+            <img src="assets/magneton logo2.png" class="conteudo__img" alt="Logo do Magneton">
+        </section>
+    </main>
+    
+    <footer class="rodape">
+      <p class="rodape__titulo">Desenvolvido em 2024 por Franzi!</p>
+      <p class="rodape__texto">Universidade Federal do Rio Grande do Sul</p>
+    </footer>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "ac08f923-7bb8-4651-8905-2dac0761344e", // The ID of this integration.
+        region: "us-east", // The region your integration is hosted in.
+        serviceInstanceID: "836a48b5-aa15-4a0c-a5bf-ce24e8e10f1f", // The ID of your service instance.
+        onLoad: async (instance) => { await instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+</html>

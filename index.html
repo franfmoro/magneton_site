@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Magneton</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!---informação edge recente-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!---escala da página baseada no dispositivo-->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+        <header>
+            <nav>
+                <span class="logo"><strong class="destaque">Magne</strong>ton</span>
+                <ul class="menu">
+                    <li><a href="index.html" class="menu-link">Home</a></li>   
+                    <li><a href="instrucao.html" class="menu-link">Instruções</a></li>              
+                    <li><a href="contato.html" class="menu-link">Contato</a></li>                         
+                </ul>
+                <a class="menu__texto">Moodle</a>
+            </nav>
+        </header>
+    <main class="apresenta">
+        <section class="apresenta__conteudo">
+            <h1 class="apresenta___conteudo__titulo"> Olá, eu sou o <strong class="destaque">Magneton</strong>, mas pode me chamar de <strong class="destaque2">Ton!</strong></h1>
+            <p class="apresenta__conteudo__texto"> Você está sendo convidado a ser um mestre pokémon e treinar o Magneton nas suas habilidades de circuito elétrico. Sua participação vai auxiliar na inclusão de respostas na base do chatbot permitindo a evolução da ferramenta. Para conversar com o magneton é só escolher um dos conteúdos: </p>
+            <div class="apresenta__link">
+                <a class="apresenta__link__botao" href="https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?region=us-east&integrationID=978e52ae-f0b3-467c-99e5-f1fcfe8803c0&serviceInstanceID=836a48b5-aa15-4a0c-a5bf-ce24e8e10f1f">Eletromagnetismo</a>
+                <a class="apresenta__link__botao" href="eletrica-1.html">Circuitos Elétricos</a>
+            </div>
+        </section>
+        <div class="apresenta__img">
+        <img src="assets/magneton logo2.png" alt="Logo do Magneton">
+       </div>
+    </main>
+    <footer class="rodape">
+      <p class="rodape__titulo">Desenvolvido em 2024 por Franzi!</p>
+      <p class="rodape__texto">Universidade Federal do Rio Grande do Sul</p>
+    </footer>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "ac08f923-7bb8-4651-8905-2dac0761344e", // The ID of this integration.
+        region: "us-east", // The region your integration is hosted in.
+        serviceInstanceID: "836a48b5-aa15-4a0c-a5bf-ce24e8e10f1f", // The ID of your service instance.
+        onLoad: async (instance) => { await instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+</html>

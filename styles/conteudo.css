@@ -1,0 +1,32 @@
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.conteudo_sessao{
+    justify-self: center;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.conteudo__titulo{
+    margin-top: 10px;
+    font-size:36px;
+    font-family: Teko;
+    color:rgb(161, 15, 5);
+
+}
+.conteudo__texto{
+    font-size: 16px;
+    text-align: justify;
+    font-size: Montserrat;
+    color:#FFF2E7;
+    padding: 0 2rem;
+}
+.conteudo__img{
+    width: 30%;
+    height: 30%;
+    padding-left: 200px;
+}
