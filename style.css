@@ -26,9 +26,9 @@ ul{
 }
 
 nav{
-    max-width: 1120px;
+    max-width: 2000px;
     margin:auto;
-    padding: 1.5rem 10rem;
+    padding: 2rem 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,6 +51,7 @@ nav{
     gap:1.5rem;
     color: #8b8b8c;
     font-family: Teko;
+
     
 
 }
